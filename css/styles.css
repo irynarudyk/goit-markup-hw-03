@@ -1,38 +1,52 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
+    margin: 0;
     }
 
 .container {
-    width: 1200;
-    padding-left: 15;
-    padding-right: 15;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    
-}
-
-.header-container {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .list {
     list-style: none;
     padding: 0;
-    margin: 0;
     }
 
 .link {
     text-decoration: none;
 }
+
 .header {
     background: #FFFFFF;
-    margin-top: 0;
-    margin-bottom: 0;
+        
+}
+   
+ .h1, h2, h3, h4, p, ul {
+    margin: 0;
+ } 
+    
+.container.header-container {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 32;
+    margin-bottom: 32;
+    background-color: tomato;
+    ;
+
     }
+
+
+/*.main-container {
+       background-color: #caad2b;
+}*/
+
+
 
 /*Лого*/
 .logo {
@@ -41,10 +55,13 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: #000000;
+    width: 145;
 }
 
 .logo-nav {
     color: #2196F3;
+    margin-top: 24px;
+    margin-bottom: 25px;
 }
 
 .logo-footer {
@@ -61,7 +78,10 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    }
+    background-color: #691882;
+
+}
+
 .link-header {
     color: #000;
 }
@@ -91,7 +111,7 @@ body {
 
 /*Шапка*/
 
-.main-title {
+.title-main {
     background: #2F303A;
     font-weight: 900;
     font-size: 44px;
@@ -99,9 +119,11 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding-top: 200px;
+    padding-bottom: 280px;
     }
 
-.title {
+.container.title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -109,28 +131,38 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-}
+
+    }
 
 /*Button*/
 .button {
     font-family: inherit;
     background: #2196F3;
     color: #ffffff;
+    min-width: 200px;
+    min-height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer; 
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px 32px;
     }
 
-.main-title.button:hover {
-      background: #188CE8;
+.button:hover, 
+.button:focus {
+      background: #ffffff;
+      color: #000000;
 }
 
 /*Особенности*/
 
 .specific {
     background: #FFFFFF;
+    background-color: tomato;
+    padding-top: 94px;
 }
 
 .subtitle {
@@ -146,9 +178,20 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 10px;
 }
 
 /*Чем мы занимаемся*/
+
+.item {
+    margin-top: 50px;
+    padding-bottom: 94px;
+}
+
+.job {
+    padding-top: 94px;
+    background-color: rgb(190, 213, 38);
+}
 
 .subject {
     font-weight: 700;
@@ -157,9 +200,11 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     }
+
 /*Наша команда*/
 .team {
     background: #F5F4FA;
+    padding-top: 94px;
 }
 
 .our-team {
