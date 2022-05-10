@@ -351,6 +351,11 @@ list-style: none;
     color: rgba(255, 255, 255, 0.6);
 }
 /*Портфолио*/
+.navigation {
+    justify-content: center;
+    
+}
+
 .button-navigation {
     font-family: inherit;
     font-style: normal;
@@ -361,6 +366,11 @@ list-style: none;
     letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
+    border-radius: 4px;
+    border: 1px;
+    display: block;
+    margin-right: 8px;
+    justify-content: center;
 }
 
 .button-navigation:hover,
@@ -372,12 +382,44 @@ list-style: none;
     border-radius: 4px;
 }
 
+/*.navigation {
+    
+}*/
+
+.list-navigation {
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.list-flexbox {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.element-flexbox {
+    display: block;
+    padding: 20px 24px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.gallery link {
+margin-top: 0px;
+
+}
+
 .progect {
     color: #212121;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    
 }
 
 .desc {
