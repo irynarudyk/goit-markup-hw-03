@@ -24,6 +24,7 @@ body {
 .header {
     background: #FFFFFF;
     border-bottom: 1px solid;
+    color: #ECECEC;
               
 }
    
@@ -312,7 +313,7 @@ margin-right: 50px;
 .team-div {
    background: #FFFFFF;
    padding: 30px 10px;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -377,9 +378,13 @@ list-style: none;
     color: rgba(255, 255, 255, 0.6);
 }
 /*Портфолио*/
+
 .navigation {
     justify-content: center;
-    
+    padding-top: 96px;
+    padding-bottom: 92px;
+    /*background-color: tomato;*/
+        
 }
 
 .button-navigation {
@@ -395,9 +400,14 @@ list-style: none;
     border-radius: 4px;
     border: 1px;
     display: block;
-    margin-right: 8px;
+   
     justify-content: center;
-}
+    padding-top:6px ;
+    padding-bottom:6px ;
+    padding-left:22px ;
+    padding-right:22px ;
+    }
+
 
 .button-navigation:hover,
 .button-navigation:focus {
@@ -408,9 +418,10 @@ list-style: none;
     border-radius: 4px;
 }
 
-/*.navigation {
+.li-navigation {
+    margin-right: 8px;
     
-}*/
+}
 
 .list-navigation {
     display: flex;
@@ -423,15 +434,28 @@ list-style: none;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    /*outline: 1px solid tomato;*/
+    margin-left: -30px;
+    margin-top: -30px;
 
 }
 
+.list-flexbox .element {
+    /*outline: 1px solid #ea2ca4;*/
+    margin-left:30px ;
+    margin-top: 30px;
+    flex-basis: calc(100%/3-30px);
+}
+
 .element-flexbox {
-    display: block;
-    padding: 20px 24px;
-    margin-right: 30px;
-    flex-wrap: wrap;
-    
+   flex-wrap: wrap;
+   padding-right: 24px;
+   padding-left: 24px;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   border: 1px solid #EEEEEE;
 }
 
 .gallery link {
@@ -445,6 +469,7 @@ margin-top: 0px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    /*margin-top: 20px;*/
     
 }
 
